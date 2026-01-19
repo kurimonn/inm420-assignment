@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - Design Kit Solutions</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER + NAVIGATION ========== -->
+  <header class="sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <!-- Mobile Hamburger Menu (Left side) -->
+        <button class="navbar-toggler border-0 d-lg-none me-2 hamburger-left" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/icons/icon-layout.png" alt="Layout icon" class="logo-layout-icon me-2 d-none d-lg-flex">
+          <span class="grid-logo-text d-none d-lg-inline">Grid</span>
+          <span class="fw-bold fs-4 d-lg-none">Grid</span>
+        </a>
+
+        <!-- Mobile Sign In Button (Right side) -->
+        <a href="#" class="btn btn-primary btn-signin btn-signin-mobile d-lg-none">Sign In</a>
+
+        <!-- Desktop Toggle Button (hidden, just for spacing) -->
+        <button class="navbar-toggler border-0 d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-link-active" href="#">How it works</a>
+            </li>
+            <li class="nav-dot d-none d-lg-block">•</li>
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-link-purple" href="#">Who we are</a>
+            </li>
+            <li class="nav-dot d-none d-lg-block">•</li>
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-link-purple" href="#">What we do</a>
+            </li>
+            <li class="nav-dot d-none d-lg-block">•</li>
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-link-purple" href="#">Contact us</a>
+            </li>
+          </ul>
+
+          <!-- Sign In Button -->
+          <a href="#" class="btn btn-primary btn-signin">Sign In</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== CSS GRID HERO SECTION (Desktop) ========== -->
+  <section class="hero-section hero-desktop py-5">
+    <div class="container">
+      <!-- Hero Header -->
+      <div class="text-center mb-5">
+        <h1 class="hero-title">
+          Combine <span class="highlight-red">fine</span> images
+        </h1>
+        <h2 class="hero-subtitle">To represent a product</h2>
+      </div>
+
+      <!-- Decorative Dots (Top Right) -->
+      <div class="hero-dots"></div>
+
+      <!-- Shape 2 (Yellow semicircle) -->
+      <div class="hero-shape2">
+        <img src="images/shape2.png" alt="Decorative shape">
+      </div>
+
+      <!-- CSS Grid Image Layout -->
+      <div class="hero-grid">
+        <!-- Left Column -->
+        <div class="hero-grid-left">
+          <p class="grid-description">
+            Use mixed grid with imagery,<br>replace with your own photos<br>and descriptions
+          </p>
+          <div class="grid-purple-card">
+            <img src="images/card-black.png" alt="Person" class="grid-image">
+          </div>
+          <a href="#" class="btn btn-primary btn-learn-hero">Learn more</a>
+        </div>
+
+        <!-- Right Grid -->
+        <div class="hero-grid-right">
+          <!-- Upper Section -->
+          <div class="hero-grid-upper">
+            <!-- Consider it done Image (large) -->
+            <div class="grid-item grid-consider">
+              <img src="images/consider-it-done.png" alt="Consider it done" class="grid-image">
+            </div>
+
+            <!-- Right Description -->
+            <div class="grid-item grid-text-right">
+              <p class="grid-description">
+                This is multipurpose grid, it fits for<br>portfolio, services or agency web site
+              </p>
+            </div>
+
+            <!-- Small Images Row -->
+            <div class="grid-item grid-small-1">
+              <img src="images/letter-a.png" alt="Letter A" class="grid-image-small">
+            </div>
+
+            <div class="grid-item grid-small-2">
+              <img src="images/shoe.png" alt="Shoe" class="grid-image-small">
+            </div>
+          </div>
+
+          <!-- Lower Section -->
+          <div class="hero-grid-lower">
+            <!-- Change by Design Book -->
+            <div class="grid-item grid-book">
+              <img src="images/book.png" alt="Change by Design Book" class="grid-image">
+            </div>
+
+            <!-- See my goal Image -->
+            <div class="grid-item grid-goal">
+              <img src="images/see-my-goal.png" alt="See my goal" class="grid-image">
+            </div>
+
+            <div class="grid-item grid-small-3">
+              <img src="images/window.png" alt="Window" class="grid-image-small">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CSS GRID HERO SECTION (Mobile) ========== -->
+  <section class="hero-section hero-mobile py-4">
+    <!-- Decorative Wave - outside container -->
+    <div class="hero-wave-mobile">
+      <img src="responsive images/Wave.png" alt="Decorative wave">
+    </div>
+    <!-- Shape 2 for Mobile -->
+    <div class="hero-shape2-mobile">
+      <img src="responsive images/Shape 2.png" alt="Decorative shape">
+    </div>
+
+    <div class="container">
+      <!-- Mobile Hero Header -->
+      <div class="text-center mb-4 hero-header-mobile">
+        <h1 class="hero-title-combine">Combine</h1>
+        <div class="hero-title-img-cool-wrapper">
+          <h2 class="hero-title-cool"><span class="cool-text">Cool</span> <span class="images-text">images</span></h2>
+          <img src="responsive images/99 dp.png" alt="" class="hero-green-underline">
+        </div>
+        <p class="hero-subtitle-text">To create any grid by scaling and resizing</p>
+        <div class="hero-arrow mt-3">
+          <img src="images/icons/Icon Acrylic.png" alt="Arrow icon">
+        </div>
+      </div>
+
+      <!-- Decorative Elements for Mobile -->
+      <div class="hero-dots-mobile">
+        <img src="responsive images/Dots 1.png" alt="Decorative dots">
+      </div>
+
+      <!-- Mobile CSS Grid Image Layout - matching Figma -->
+      <div class="hero-grid-mobile">
+        <!-- A: Lipstick/business - left tall -->
+        <div class="grid-item-mobile grid-mobile-a">
+          <img src="responsive images/Card 1.png" alt="Business" class="grid-image-mobile">
+        </div>
+        <!-- B: No problems! - top center -->
+        <div class="grid-item-mobile grid-mobile-b">
+          <img src="responsive images/Card 1-6.png" alt="No problems!" class="grid-image-mobile">
+        </div>
+        <!-- C: Your wake clock - top right -->
+        <div class="grid-item-mobile grid-mobile-c">
+          <img src="responsive images/Card 1-1.png" alt="Your wake" class="grid-image-mobile">
+        </div>
+        <!-- D: Caption here plant - center -->
+        <div class="grid-item-mobile grid-mobile-d">
+          <img src="responsive images/Card 1-2.png" alt="Caption here" class="grid-image-mobile">
+        </div>
+        <!-- E: You can set centered text - right large -->
+        <div class="grid-item-mobile grid-mobile-e">
+          <img src="responsive images/Card 1-3.png" alt="You can set centered text" class="grid-image-mobile">
+        </div>
+        <!-- F: Flower -->
+        <div class="grid-item-mobile grid-mobile-f">
+          <img src="responsive images/Card 1-4.png" alt="Flower" class="grid-image-mobile">
+        </div>
+        <!-- G: The Process -->
+        <div class="grid-item-mobile grid-mobile-g">
+          <img src="responsive images/Card 1-5.png" alt="The Process" class="grid-image-mobile">
+        </div>
+        <!-- Learn More Button -->
+        <div class="grid-mobile-button">
+          <a href="#" class="btn btn-primary btn-learn-hero-mobile w-100">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DELIVERING GOOD DESIGNS SECTION (Desktop) ========== -->
+  <section class="features-section features-desktop py-5">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <h2 class="section-title section-title-desktop mb-3">Delivering good designs since 1954 🚚💨</h2>
+          <p class="section-description section-description-desktop">
+            We're the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your layouts, templates and developers to empower all involved.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="row g-4">
+        <!-- Support Card -->
+        <div class="col-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon icon-purple mb-3">
+              <img src="images/icons/Vector.png" alt="Support icon" class="feature-card-icon feature-card-icon-small">
+            </div>
+            <h5 class="feature-title">Support</h5>
+            <p class="feature-text text-muted">
+              You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Sales growth Card -->
+        <div class="col-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon icon-blue mb-3">
+              <img src="images/icons/icon-pie-chart.png" alt="Sales growth icon" class="feature-card-icon feature-card-icon-lower">
+            </div>
+            <h5 class="feature-title">Sales growth</h5>
+            <p class="feature-text text-muted">
+              Detaching the block instance will help you to control the indents and font styles more precisely
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Components-driven Card -->
+        <div class="col-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon icon-components mb-3">
+              <img src="images/icons/icon-zap.png" alt="Components icon" class="feature-card-icon feature-card-icon-lower">
+            </div>
+            <h5 class="feature-title">Components-driven</h5>
+            <p class="feature-text text-muted">
+              You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Swap the icon Card -->
+        <div class="col-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon icon-orange mb-3">
+              <img src="images/icons/icon-thumbs-yellow.png" alt="Swap icon" class="feature-card-icon">
+            </div>
+            <h5 class="feature-title">Swap the icon</h5>
+            <p class="feature-text text-muted">
+              Detaching the block instance will help you to control the indents and font styles more precisely
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DELIVERING GOOD DESIGNS SECTION (Mobile) ========== -->
+  <section class="features-section features-mobile py-5">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="row mb-5">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-3">Delivering good designs <br><span class="text-purple">since 1954</span></h2>
+          <p class="section-description text-muted">
+            We're the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your layouts, templates and developers to empower all involved.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="row g-4">
+        <!-- Swap the icon Card -->
+        <div class="col-6">
+          <div class="feature-card">
+            <div class="feature-icon icon-coral mb-3">
+              <img src="images/icons/icon-thumbs-up.png" alt="Thumbs up icon" class="feature-card-icon">
+            </div>
+            <h5 class="feature-title">Swap the icon</h5>
+            <p class="feature-text text-muted">
+              You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Detach if need Card -->
+        <div class="col-6">
+          <div class="feature-card">
+            <div class="feature-icon icon-green mb-3">
+              <img src="images/icons/icon-zap-off.png" alt="Zap off icon" class="feature-card-icon">
+            </div>
+            <h5 class="feature-title">Detach if need</h5>
+            <p class="feature-text text-muted">
+              Detaching the block instance will help you to control the indents and font styles more precisely
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Toggle icons Card -->
+        <div class="col-6">
+          <div class="feature-card">
+            <div class="feature-icon icon-pink mb-3">
+              <img src="images/icons/icon-linkedin.png" alt="Toggle icon" class="feature-card-icon">
+            </div>
+            <h5 class="feature-title">Toggle icons</h5>
+            <p class="feature-text text-muted">
+              You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Replace a title Card -->
+        <div class="col-6">
+          <div class="feature-card">
+            <div class="feature-icon icon-cyan mb-3">
+              <img src="images/icons/icon-briefcase.png" alt="Briefcase icon" class="feature-card-icon">
+            </div>
+            <h5 class="feature-title">Replace a title</h5>
+            <p class="feature-text text-muted">
+              Detaching the block instance will help you to control the indents and font styles more precisely
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-sm btn-learn-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (Desktop) ========== -->
+  <footer class="footer-section footer-desktop pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Left Side - Social & Links -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <!-- Follow Us -->
+          <div class="mb-4">
+            <h6 class="footer-label text-uppercase mb-3">Follow Us</h6>
+            <div class="social-icons d-flex gap-3">
+              <a href="#" class="social-icon-desktop social-icon-facebook"><img src="images/icons/icon-facebook.png" alt="Facebook" class="social-icon-img-desktop"></a>
+              <a href="#" class="social-icon-desktop"><img src="images/icons/icon-linkedin.png" alt="LinkedIn" class="social-icon-img-desktop"></a>
+              <a href="#" class="social-icon-desktop"><img src="images/icons/icon-slack.png" alt="Slack" class="social-icon-img-desktop"></a>
+              <a href="#" class="social-icon-desktop"><img src="images/icons/icon-twitter.png" alt="Twitter" class="social-icon-img-desktop"></a>
+            </div>
+          </div>
+
+          <!-- Information Links -->
+          <div class="mb-4">
+            <h6 class="footer-label text-uppercase mb-3">Information</h6>
+            <div class="row">
+              <div class="col-4">
+                <ul class="list-unstyled footer-links">
+                  <li><a href="#">About Faster app</a></li>
+                  <li><a href="#">Get in Touch</a></li>
+                  <li><a href="#">Things We Like</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <ul class="list-unstyled footer-links">
+                  <li><a href="#">Onboarded / Active</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <ul class="list-unstyled footer-links">
+                  <li><a href="#">We are hiring!</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Contact Form -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <h6 class="footer-label text-uppercase mb-2">Follow Us</h6>
+            <a href="mailto:hello@fasterapp.com" class="contact-email">hello@fasterapp.com</a>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <h6 class="footer-label text-uppercase mb-3">Keep In Touch</h6>
+            <form class="contact-form">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="input-wrapper">
+                    <input type="text" class="form-control" placeholder="Your name">
+                    <img src="images/icons/icon-user.png" alt="User" class="input-icon-desktop">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="input-wrapper">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                    <img src="images/icons/icon-mail.png" alt="Mail" class="input-icon-desktop">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="input-wrapper input-wrapper-message">
+                    <input type="text" class="form-control form-control-message" placeholder="Leave your message">
+                    <img src="images/icons/icon-edit.png" alt="Edit" class="input-icon-desktop input-icon-message">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <button type="submit" class="btn btn-primary w-100 btn-send">SEND</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Bottom -->
+    <div class="footer-wave">
+      <img src="images/wave.png" alt="Wave" class="wave-image">
+    </div>
+  </footer>
+
+  <!-- ========== FOOTER (Mobile) ========== -->
+  <footer class="footer-section footer-mobile py-5">
+    <!-- Shape decoration -->
+     
+    <img src="responsive images/footer/Shape.png" alt="Shape" class="footer-shape-mobile">
+    <img src="responsive images/footer/Dots 1.png" alt="Dots" class="footer-dots-mobile">
+    <div class="container text-center">
+      <p class="footer-copyright mb-2">Copyright © 2018 • Your Company<br>All rights reserved</p>
+      <p class="footer-made mb-1">
+        <span class="text-green">Made in Setproduct.com</span><br>
+        <span class="text-green">One man digital agency</span>
+      </p>
+      <a href="mailto:hello@setproduct.com" class="footer-email text-purple">hello@setproduct.com</a>
+
+      <div class="social-icons-mobile mt-4 d-flex justify-content-center">
+        <a href="#"><img src="images/icons/icon-facebook.png" alt="Facebook" class="social-icon-img"></a>
+        <a href="#"><img src="images/icons/icon-linkedin black.png" alt="LinkedIn" class="social-icon-img"></a>
+        <a href="#"><img src="images/icons/icon-slack.png" alt="Slack" class="social-icon-img"></a>
+        <a href="#"><img src="images/icons/icon-twitter.png" alt="Twitter" class="social-icon-img"></a>
+        <a href="#"><img src="images/icons/icon-youtube.png" alt="YouTube" class="social-icon-img"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

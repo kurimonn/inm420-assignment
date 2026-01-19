@@ -1,0 +1,16 @@
+{
+  "name": "inm420-assignment",
+  "version": "1.0.0",
+  "description": "Responsive web page with Bootstrap 5",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
